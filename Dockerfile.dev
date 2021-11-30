@@ -1,0 +1,6 @@
+ARG JAVA_TAG
+FROM openjdk:${JAVA_TAG}
+
+WORKDIR /app
+
+CMD ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"]
